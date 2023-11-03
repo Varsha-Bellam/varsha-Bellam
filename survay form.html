@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="description" content="A survey form">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="survay form.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 id="title" class="bold">Customer Survey Form</h1>
+        </header>
+        <main>
+            <form id="survey-form" class="container">
+                <!-- <p id="description">Thank you for taking the time to help us improve this platform!</p> -->
+                <label id="name-label" for="name">FirstName*</label>
+                <input id="name" class="input sm bottom-space pink" type="text" placeholder="Enter your firstName" required>
+                <label id="name-label" for="name">LastName*</label>
+                <input id="name" class="input sm bottom-space pink" type="text" placeholder="Enter your Lastname" required>
+                <label id="email-label" for="email">Email*</label>
+                <input id="email" class="input sm bottom-space pink" type="email" placeholder="Enter your email" required>
+                <label for "mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" required placeholder="123-456-7890">
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select Country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">China</option>
+            <option value="Canada">Japan</option>
+        </select>
+        <label>Gender</label>
+        <div class="checkbox-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <label for="profession">Profession</label>
+        <input type="text" id="profession" name="profession" required placeholder="Designer">
+
+                </div>
+                <label id="textarea-label" for="textarea" required placeholder="">Any comments or suggestions? <span class="sm">
+                    </span></label>
+                <textarea id="textarea" class="sm pink" placeholder="Enter your message here..."></textarea>
+                <div class="top-space">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+                <div class="top-space">
+                    <input type="submit" id="reset" value="Reset">
+                </div>
+                <div>
+                    <p class="sm">@2018 customer survey form all rights reserved</p>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
